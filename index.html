@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神楽神社 | Kagura Shrine - Ancient Peace in Modern Times</title>
+    <meta name="description" content="神楽神社は、古来より人々の祈りを受け止めてきた、静寂と神秘に包まれた神社です。">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading-screen" id="loading-screen">
+        <div class="loader-logo">神楽</div>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#">神楽神社</a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link">由緒</a></li>
+                <li><a href="#scenery" class="nav-link">景色</a></li>
+                <li><a href="#omikuji" class="nav-link">おみくじ</a></li>
+                <li><a href="#access" class="nav-link">参拝案内</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="t-vert">悠久の</span>
+                    <span class="t-vert">時を</span>
+                    <span class="t-vert">繋ぐ</span>
+                </h1>
+                <p class="hero-subtitle">Kagura Shrine</p>
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/History Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">由緒</h2>
+                    <span class="section-subtitle">History</span>
+                </div>
+                <div class="about-content">
+                    <div class="about-text fade-up">
+                        <p>神楽神社は、深い森に抱かれた静寂の地に鎮座しています。<br>
+                        古くから「神々の遊ぶ庭」として親しまれ、<br>
+                        四季折々の美しい自然と共に、人々の祈りを見守り続けてきました。</p>
+                        <p>朝霧に包まれる参道、木漏れ日が降り注ぐ境内。<br>
+                        ここには、現代の喧騒を忘れさせる、<br>
+                        清らかで穏やかな時間が流れています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scenery/Gallery Section -->
+        <section class="section scenery" id="scenery">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">景色</h2>
+                    <span class="section-subtitle">Scenery</span>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Images will be placeholders for now, envisioned as 4 seasonal shots -->
+                    <div class="gallery-item fade-up delay-1">
+                        <div class="gallery-placeholder">春</div>
+                    </div>
+                    <div class="gallery-item fade-up delay-2">
+                        <div class="gallery-placeholder">夏</div>
+                    </div>
+                    <div class="gallery-item fade-up delay-3">
+                        <div class="gallery-placeholder">秋</div>
+                    </div>
+                    <div class="gallery-item fade-up delay-4">
+                        <div class="gallery-placeholder">冬</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Omikuji Section -->
+        <section class="section omikuji-section" id="omikuji">
+            <div class="container">
+                <div class="omikuji-container fade-up">
+                    <div class="section-header">
+                        <h2 class="section-title">おみくじ</h2>
+                        <span class="section-subtitle">Omikuji</span>
+                    </div>
+                    <p class="omikuji-desc">今日の運勢を占ってみませんか。</p>
+                    <button id="omikuji-btn" class="omikuji-btn">おみくじを引く</button>
+                    <div id="omikuji-result" class="omikuji-result hidden">
+                        <div class="result-inner">
+                            <h3 id="result-title"></h3>
+                            <p id="result-text"></p>
+                            <button id="close-result">閉じる</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Section -->
+        <section class="section access" id="access">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">参拝案内</h2>
+                    <span class="section-subtitle">Access</span>
+                </div>
+                <div class="access-content fade-up">
+                    <div class="access-info">
+                        <h3>神楽神社</h3>
+                        <p>〒000-0000<br>架空県架空市神楽町1-1</p>
+                        <p>参拝時間：6:00 - 18:00<br>社務所受付：9:00 - 16:30</p>
+                    </div>
+                    <div class="access-map">
+                        <!-- Placeholder for map -->
+                        <div class="map-placeholder">Map Area</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">神楽神社</div>
+            <ul class="footer-links">
+                <li><a href="#">お問い合わせ</a></li>
+                <li><a href="#">プライバシーポリシー</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Kagura Shrine. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
